@@ -1,3 +1,6 @@
+# References
+- [Hirbernate vs JPA](https://www.tutorialspoint.com/difference-between-hibernate-and-jpa#)
+
 # Read Me First
 The following was discovered as part of building this project:
 
