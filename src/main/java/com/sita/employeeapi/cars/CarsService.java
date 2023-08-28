@@ -23,5 +23,8 @@ public class CarsService {
 
     public List<Cars> ListCars() {return carsRepository.findAll();}
 
-
+    public void deleteCars(long carsId)
+    {
+        carsRepository.deleteById(carsId);
+    }
 }

@@ -24,4 +24,10 @@ public class CarsController {
     public ResponseEntity<Cars> saveCarsApi(@RequestBody Cars cars) {
         return ResponseEntity.created(null).body(carsService.saveCars(cars));
     }
+
+    @DeleteMapping("{id}")
+    public ResponseEntity deleteCarsApi(@PathVariable("id") long id) {
+        carsService.deleteCars(id);
+        return ResponseEntity.ok("Product is deleted successsfully");
+    }
 }
